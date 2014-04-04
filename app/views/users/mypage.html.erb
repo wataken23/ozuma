@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>マイページ</h1>
+ようこそ <%= current_user.account %> さん
+<div id="mainbody">
+  <div id="container">
+    <div id="mainbox">
+      <div id="mainfield">
+
+	<table border="1" width="700px">
+	    <tr>
+	      <th>User</th>
+	    </tr>
+	</table>
+	<br />
+      </div>
+    </div>
+    <div id="sidebox">
+      <div id="sidemenu">
+	<%= render 'shared/sidemenu-adm' %>
+	<%= render 'shared/sidemenu-public' %>
+      </div>
+    </div>
+  </div>
+</div>

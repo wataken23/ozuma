@@ -1,0 +1,8 @@
+<%# unless @role["#{current_user.role_id}"] == '受講生' %>
+<% if @role["#{current_user.role_id}"] == 'Staff' or @role["#{current_user.role_id}"] == 'TA' %>
+<h2>管理者メニュー</h2>
+<p>
+  <%= link_to 'ユーザ新規作成', new_user_path %><br />
+  <%= link_to 'ユーザ情報変更', users_path %> <br />
+</p>
+<% end %>

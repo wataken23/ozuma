@@ -1,0 +1,3 @@
+class Myfile < ActiveRecord::Base
+  attr_accessible :caption, :filename, :user_id
+end

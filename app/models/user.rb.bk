@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+class User < ActiveRecord::Base
+  attr_accessible :account, :email, :grade, :password, :role_id, :username, :password_confirmation, :acception, :owner#, :password_digest
+  belongs_to :role
+
+#=begin
+  has_secure_password 
+#=end
+end
